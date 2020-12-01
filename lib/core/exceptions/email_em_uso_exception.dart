@@ -1,0 +1,1 @@
+class EmailEmUsoException implements Exception {}

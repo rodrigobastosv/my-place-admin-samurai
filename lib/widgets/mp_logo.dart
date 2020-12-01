@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
 
 class MPLogo extends StatelessWidget {
-  const MPLogo({
+  MPLogo({
     Key key,
+    this.fontSize = 40,
   }) : super(key: key);
+
+  final double fontSize;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Padding(
-          padding: const EdgeInsets.only(bottom: 40 / 3.5),
+          padding: EdgeInsets.only(bottom: fontSize / 3.5),
           child: Text(
             'MyPlace',
             style: TextStyle(
-              fontSize: 40,
+              fontSize: fontSize,
               fontWeight: FontWeight.w500,
               color: Theme.of(context).primaryColor,
             ),
@@ -26,7 +29,7 @@ class MPLogo extends StatelessWidget {
           child: Text(
             'admin',
             style: TextStyle(
-              fontSize: 40 / 2.5,
+              fontSize: fontSize / 2.5,
               fontWeight: FontWeight.w500,
               color: Theme.of(context).accentColor,
             ),
