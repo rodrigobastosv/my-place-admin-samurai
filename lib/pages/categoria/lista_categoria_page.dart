@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:my_place_admin/widgets/mp_app_bar.dart';
 import 'package:my_place_admin/widgets/mp_button_icon.dart';
 import 'package:my_place_admin/widgets/mp_empty.dart';
+import 'package:my_place_admin/widgets/mp_list_tile.dart';
+import 'package:my_place_admin/widgets/mp_list_view.dart';
 import 'package:my_place_admin/widgets/mp_loading.dart';
 
 import 'lista_categoria_controller.dart';
@@ -31,7 +33,23 @@ class ListaCategoriaPage extends StatelessWidget {
             if (categorias.isEmpty || categorias == null) {
               return MPEmpty();
             } else {
-              return Text('Categorias');
+              return MPListView(
+                itemCount: categorias.length,
+                itemBuilder: (context, i) => MPListTile(
+                  leading: categorias[i].urlImagem != null
+                      ? CircleAvatar(
+                          backgroundImage:
+                              NetworkImage(categorias[i].urlImagem),
+                        )
+                      : Icon(Icons.category),
+                  title: Text(categorias[i].nome),
+                  trailing: IconButton(
+                    icon: Icon(Icons.delete),
+                    onPressed: () {},
+                  ),
+                  onTap: () {},
+                ),
+              );
             }
           } else if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
