@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_place_admin/core/model/usuario_model.dart';
 import 'package:my_place_admin/pages/categoria/lista_categoria_page.dart';
 import 'package:my_place_admin/pages/produto/lista_produto_page.dart';
+import 'package:my_place_admin/pages/promocao/lista_promocao_page.dart';
 import 'package:my_place_admin/widgets/mp_app_bar.dart';
 import 'package:my_place_admin/widgets/mp_logo.dart';
 
@@ -42,7 +43,7 @@ class HomePage extends StatelessWidget {
             _Button(
               text: 'Promoções',
               iconData: Icons.campaign,
-              page: Scaffold(),
+              page: ListaPromocaoPage(),
             ),
             _Button(
               text: 'Pedidos Pendentes',
