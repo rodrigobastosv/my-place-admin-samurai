@@ -18,4 +18,8 @@ class ListaCategoriaController {
       );
     });
   }
+
+  Future<void> removeCategoria(CategoriaModel categoria) async {
+    await categoriasRef.doc(categoria.id).delete();
+  }
 }

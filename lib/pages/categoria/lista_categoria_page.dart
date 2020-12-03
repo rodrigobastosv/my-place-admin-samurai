@@ -7,6 +7,7 @@ import 'package:my_place_admin/widgets/mp_list_tile.dart';
 import 'package:my_place_admin/widgets/mp_list_view.dart';
 import 'package:my_place_admin/widgets/mp_loading.dart';
 
+import 'form_categoria_page.dart';
 import 'lista_categoria_controller.dart';
 
 class ListaCategoriaPage extends StatelessWidget {
@@ -20,7 +21,13 @@ class ListaCategoriaPage extends StatelessWidget {
         actions: [
           MPButtonIcon(
             iconData: Icons.add,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => FormCategoriaPage(null),
+                ),
+              );
+            },
           )
         ],
       ),
@@ -36,18 +43,29 @@ class ListaCategoriaPage extends StatelessWidget {
               return MPListView(
                 itemCount: categorias.length,
                 itemBuilder: (context, i) => MPListTile(
-                  leading: categorias[i].urlImagem != null
-                      ? CircleAvatar(
-                          backgroundImage:
-                              NetworkImage(categorias[i].urlImagem),
-                        )
-                      : Icon(Icons.category),
+                  leading: Hero(
+                    tag: categorias[i].id,
+                    child: categorias[i].urlImagem != null
+                        ? CircleAvatar(
+                            backgroundImage:
+                                NetworkImage(categorias[i].urlImagem),
+                          )
+                        : Icon(Icons.category),
+                  ),
                   title: Text(categorias[i].nome),
                   trailing: IconButton(
                     icon: Icon(Icons.delete),
-                    onPressed: () {},
+                    onPressed: () async {
+                      await _controller.removeCategoria(categorias[i]);
+                    },
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => FormCategoriaPage(categorias[i]),
+                      ),
+                    );
+                  },
                 ),
               );
             }
