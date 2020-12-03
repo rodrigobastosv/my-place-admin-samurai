@@ -132,6 +132,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_masked_text:
+    dependency: "direct main"
+    description:
+      name: flutter_masked_text
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.8.0"
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -240,6 +247,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.5"
+  select_form_field:
+    dependency: "direct main"
+    description:
+      name: select_form_field
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
   sky_engine:
     dependency: transitive
     description: flutter

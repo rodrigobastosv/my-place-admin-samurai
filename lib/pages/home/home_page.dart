@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_place_admin/core/model/usuario_model.dart';
 import 'package:my_place_admin/pages/categoria/lista_categoria_page.dart';
+import 'package:my_place_admin/pages/produto/lista_produto_page.dart';
 import 'package:my_place_admin/widgets/mp_app_bar.dart';
 import 'package:my_place_admin/widgets/mp_logo.dart';
 
@@ -36,7 +37,7 @@ class HomePage extends StatelessWidget {
             _Button(
               text: 'Produtos',
               iconData: Icons.fastfood,
-              page: Scaffold(),
+              page: ListaProdutoPage(),
             ),
             _Button(
               text: 'Promoções',
