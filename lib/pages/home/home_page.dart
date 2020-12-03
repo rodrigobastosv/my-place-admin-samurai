@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_place_admin/core/model/usuario_model.dart';
 import 'package:my_place_admin/pages/categoria/lista_categoria_page.dart';
 import 'package:my_place_admin/pages/produto/lista_produto_page.dart';
 import 'package:my_place_admin/pages/promocao/lista_promocao_page.dart';
-import 'package:my_place_admin/widgets/mp_app_bar.dart';
-import 'package:my_place_admin/widgets/mp_logo.dart';
+import 'package:my_place_core/core/model/usuario_model.dart';
+import 'package:my_place_core/widgets/mp_app_bar.dart';
+import 'package:my_place_core/widgets/mp_logo_admin.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage(
@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MPAppBar(
-        title: MPLogo(
+        title: MPLogoAdmin(
           fontSize: 28,
         ),
         withLeading: false,

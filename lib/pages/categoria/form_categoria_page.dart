@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:my_place_admin/core/model/categoria_model.dart';
 import 'package:my_place_admin/pages/categoria/form_categoria_controller.dart';
-import 'package:my_place_admin/widgets/mp_button_icon.dart';
+import 'package:my_place_core/core/model/categoria_model.dart';
+import 'package:my_place_core/widgets/mp_button_icon.dart';
 
 class FormCategoriaPage extends StatefulWidget {
   FormCategoriaPage(this.categoria, {Key key}) : super(key: key);

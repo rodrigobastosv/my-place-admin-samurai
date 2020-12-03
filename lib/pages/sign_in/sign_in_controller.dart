@@ -1,10 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:my_place_admin/core/exceptions/admin_invalido_exception.dart';
-import 'package:my_place_admin/core/exceptions/email_invalido_exception.dart';
-import 'package:my_place_admin/core/exceptions/senha_errada_exception.dart';
-import 'package:my_place_admin/core/exceptions/usuario_nao_encontrado_exception.dart';
-import 'package:my_place_admin/core/model/usuario_model.dart';
+import 'package:my_place_core/core/exceptions/admin_invalido_exception.dart';
+import 'package:my_place_core/core/exceptions/email_invalido_exception.dart';
+import 'package:my_place_core/core/exceptions/senha_errada_exception.dart';
+import 'package:my_place_core/core/exceptions/usuario_nao_encontrado_exception.dart';
+import 'package:my_place_core/core/model/usuario_model.dart';
 
 class SignInController {
   String _email = '';

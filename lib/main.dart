@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:my_place_admin/core/theme.dart';
+import 'package:my_place_core/core/theme.dart';
 import 'package:oktoast/oktoast.dart';
 
 import 'pages/sign_in/sign_in_page.dart';

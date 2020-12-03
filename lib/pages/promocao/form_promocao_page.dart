@@ -1,16 +1,14 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:my_place_admin/core/model/produto_model.dart';
-import 'package:my_place_admin/core/model/promocao_model.dart';
-import 'package:my_place_admin/core/preco_utils.dart';
-import 'package:my_place_admin/widgets/mp_app_bar.dart';
-import 'package:my_place_admin/widgets/mp_button_icon.dart';
-import 'package:my_place_admin/widgets/mp_loading.dart';
-import 'package:my_place_admin/widgets/preco_desconto_produto.dart';
-import 'package:my_place_admin/widgets/toasts/toast_utils.dart';
+import 'package:my_place_core/core/model/produto_model.dart';
+import 'package:my_place_core/core/model/promocao_model.dart';
+import 'package:my_place_core/core/preco_utils.dart';
+import 'package:my_place_core/widgets/mp_app_bar.dart';
+import 'package:my_place_core/widgets/mp_button_icon.dart';
+import 'package:my_place_core/widgets/mp_loading.dart';
+import 'package:my_place_core/widgets/preco_desconto_produto.dart';
+import 'package:my_place_core/widgets/toasts/toast_utils.dart';
 import 'package:select_form_field/select_form_field.dart';
 
 import 'form_promocao_controller.dart';

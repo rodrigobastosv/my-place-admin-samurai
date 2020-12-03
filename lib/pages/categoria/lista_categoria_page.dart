@@ -1,11 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:my_place_admin/widgets/mp_app_bar.dart';
-import 'package:my_place_admin/widgets/mp_button_icon.dart';
-import 'package:my_place_admin/widgets/mp_empty.dart';
-import 'package:my_place_admin/widgets/mp_list_tile.dart';
-import 'package:my_place_admin/widgets/mp_list_view.dart';
-import 'package:my_place_admin/widgets/mp_loading.dart';
+import 'package:my_place_core/widgets/mp_app_bar.dart';
+import 'package:my_place_core/widgets/mp_button_icon.dart';
+import 'package:my_place_core/widgets/mp_empty.dart';
+import 'package:my_place_core/widgets/mp_list_tile.dart';
+import 'package:my_place_core/widgets/mp_list_view.dart';
+import 'package:my_place_core/widgets/mp_loading.dart';
 
 import 'form_categoria_page.dart';
 import 'lista_categoria_controller.dart';

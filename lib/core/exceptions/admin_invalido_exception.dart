@@ -1,1 +1,0 @@
-class AdminInvalidoException implements Exception {}

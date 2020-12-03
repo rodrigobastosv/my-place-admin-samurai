@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:my_place_admin/core/model/categoria_model.dart';
-import 'package:my_place_admin/core/model/produto_model.dart';
-import 'package:my_place_admin/core/model/promocao_model.dart';
+import 'package:my_place_core/core/model/categoria_model.dart';
+import 'package:my_place_core/core/model/produto_model.dart';
+import 'package:my_place_core/core/model/promocao_model.dart';
 
 class ListaCategoriaController {
   CollectionReference categoriasRef =

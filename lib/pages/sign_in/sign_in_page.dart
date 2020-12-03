@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:my_place_admin/core/exceptions/admin_invalido_exception.dart';
-import 'package:my_place_admin/core/exceptions/email_invalido_exception.dart';
-import 'package:my_place_admin/core/exceptions/senha_errada_exception.dart';
-import 'package:my_place_admin/core/exceptions/usuario_nao_encontrado_exception.dart';
 import 'package:my_place_admin/pages/home/home_page.dart';
-import 'package:my_place_admin/widgets/mp_loading.dart';
-import 'package:my_place_admin/widgets/mp_logo.dart';
-import 'package:my_place_admin/widgets/toasts/toast_utils.dart';
+import 'package:my_place_core/core/exceptions/admin_invalido_exception.dart';
+import 'package:my_place_core/core/exceptions/email_invalido_exception.dart';
+import 'package:my_place_core/core/exceptions/senha_errada_exception.dart';
+import 'package:my_place_core/core/exceptions/usuario_nao_encontrado_exception.dart';
+import 'package:my_place_core/widgets/mp_loading.dart';
+import 'package:my_place_core/widgets/mp_logo_admin.dart';
+import 'package:my_place_core/widgets/toasts/toast_utils.dart';
 
 import '../sign_up/sign_up_page.dart';
 import 'sign_in_controller.dart';
@@ -37,7 +37,7 @@ class _SignInPageState extends State<SignInPage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      MPLogo(),
+                      MPLogoAdmin(),
                       SizedBox(height: 16),
                       TextFormField(
                         decoration: InputDecoration(

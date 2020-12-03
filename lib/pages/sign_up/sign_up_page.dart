@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:my_place_admin/core/exceptions/email_em_uso_exception.dart';
-import 'package:my_place_admin/core/exceptions/email_invalido_exception.dart';
-import 'package:my_place_admin/core/exceptions/senha_fraca_exception.dart';
 import 'package:my_place_admin/pages/sign_up/sign_up_controller.dart';
-import 'package:my_place_admin/widgets/mp_loading.dart';
-import 'package:my_place_admin/widgets/mp_logo.dart';
-import 'package:my_place_admin/widgets/toasts/toast_utils.dart';
+import 'package:my_place_core/core/exceptions/email_em_uso_exception.dart';
+import 'package:my_place_core/core/exceptions/email_invalido_exception.dart';
+import 'package:my_place_core/core/exceptions/senha_fraca_exception.dart';
+import 'package:my_place_core/widgets/mp_loading.dart';
+import 'package:my_place_core/widgets/mp_logo_admin.dart';
+import 'package:my_place_core/widgets/toasts/toast_utils.dart';
 
 class SignUpPage extends StatefulWidget {
   SignUpPage({Key key}) : super(key: key);
@@ -36,7 +36,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        MPLogo(),
+                        MPLogoAdmin(),
                         SizedBox(height: 16),
                         TextFormField(
                           decoration: InputDecoration(

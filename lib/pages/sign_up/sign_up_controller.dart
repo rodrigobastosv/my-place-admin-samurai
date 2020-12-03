@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:my_place_admin/core/exceptions/email_em_uso_exception.dart';
-import 'package:my_place_admin/core/exceptions/email_invalido_exception.dart';
-import 'package:my_place_admin/core/exceptions/senha_fraca_exception.dart';
+import 'package:my_place_core/core/exceptions/email_em_uso_exception.dart';
+import 'package:my_place_core/core/exceptions/email_invalido_exception.dart';
+import 'package:my_place_core/core/exceptions/senha_fraca_exception.dart';
 
 class SignUpController {
   String _nome = '';

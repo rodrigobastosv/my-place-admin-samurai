@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:my_place_admin/core/model/categoria_model.dart';
+import 'package:my_place_core/core/model/categoria_model.dart';
 
 class FormCategoriaController {
   FormCategoriaController(this._categoria);
