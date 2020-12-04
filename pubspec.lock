@@ -215,7 +215,7 @@ packages:
   my_place_core:
     dependency: "direct main"
     description:
-      path: "../my_place_core"
+      path: "../my-place-core"
       relative: true
     source: path
     version: "0.0.1"
